@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Speedrun Retime Tool</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Speedrun Retime Tool</h1>
+    <h2>Made by hxmbt</h2>
+    <form id="timeForm">
+        <label for="youtubeLink">YouTube Link:</label><br>
+        <input type="text" id="youtubeLink" name="youtubeLink"><br>
+        <input type="button" value="Load Video" onclick="loadVideo()"><br>
+        <div id="youtubeVideo"></div>
+        <input type="button" value="Set Start Time" onclick="setStartTime()">
+        <input type="button" value="Set End Time" onclick="setEndTime()">
+        <label for="fps">Video FPS:</label><br>
+        <input type="text" id="fps" name="fps"><br>
+        <input type="button" value="Calculate" onclick="calculateTime()">
+        <button id="modeSwitcher">Switch to Dark Mode</button>
+        <button id="copyButton">Copy Mod Note</button>
+        <a href="https://www.youtube.com/@hxmbt2" id="youtube-button" target="_blank">
+            <i class="fab fa-youtube"></i>
+        </a>
+    </form>
+    <form id="addTimeForm">
+        <label for="addTimeInput">Time to Add: </label><br>
+        <input type="text" id="addTimeInput" name="addTimeInput"><br>
+        <input type="button" value="Add Time" onclick="addTime()">
+    </form>
+    <p id="totalTime">Total Time: 0 seconds</p>
+    <p id="result"></p>
+    <p id="modMessage"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>

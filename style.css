@@ -1,0 +1,254 @@
+* {
+    transition: all 0.3s ease;
+}
+
+body {
+    background-color: #FAFAFA;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+form {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    transition: all 0.3s ease;
+}
+
+textarea, input[type="text"], iframe {
+    width: calc(100% - 10px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+textarea:focus, input[type="text"]:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+iframe {
+    height: 315px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+#totalTime {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007BFF;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: inline-block;
+}
+
+.dark-mode input[type="text"], .dark-mode textarea {
+    background-color: #444;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+input[type="button"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+input[type="button"]:hover {
+    background-color: #444;
+    transition: all 0.3s ease;
+}
+
+input[type="button"]:active {
+    background-color: #1a1a1a;
+    transform: scale(0.98);
+}
+
+#modMessage {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #007BFF;
+    transition: all 0.3s ease;
+}
+
+.dark-mode #modMessage {
+    color: #FFA500;
+    transition: all 0.3s ease;
+}
+
+.dark-mode #totalTime {
+    color: #f5f5f5;
+    background-color: #444;
+}
+
+#result {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+#youtube-button {
+    display: inline-block;
+    font-size: 24px;
+    color: #fff;
+    background-color: #FF0000;
+    padding: 10px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-decoration: none;
+}
+
+#youtube-button:hover {
+    transform: scale(1.1);
+}
+
+#modeSwitcher {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#timeForm input[type="button"] {
+    margin-bottom: 10px;
+    transition: all 0.3s ease
+}
+
+#modeSwitcher:hover {
+    background-color: #0056b3;
+}
+
+#modeSwitcher:active {
+    background-color: #003580;
+    transform: scale(0.98);
+}
+
+#modeSwitcher:focus {
+    outline: none;
+}
+
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #f5f5f5;
+    transition: all 0.3s ease;
+}
+
+.dark-mode h1, .dark-mode h2 {
+    color: #f5f5f5;
+    transition: all 0.3s ease;
+}
+
+.dark-mode iframe {
+    background-color: #1a1a1a;
+}
+
+.dark-mode form {
+    border-color: #444;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.dark-mode input[type="button"] {
+    background-color: #007BFF;
+    color: #f5f5f5;
+    transition: all 0.3s ease;
+}
+
+.dark-mode input[type="button"]:hover {
+    background-color: #0056b3;
+}
+
+.dark-mode #result {
+    color: #f5f5f5;
+    transition: all 0.3s ease;
+}
+
+.dark-mode textarea {
+    background-color: #444;
+    color: #fff;
+    transition: all 0.3s ease;
+} 
+
+button#copyButton {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button#copyButton:hover {
+    background-color: #444;
+    transition: all 0.3s ease;
+}
+
+button:active {
+    background-color: #1a1a1a;
+    transform: scale(0.98);
+}
+
+.dark-mode button#modeSwitcher {
+    background-color: #007BFF;
+    color: #f5f5f5;
+    transition: all 0.3s ease;
+}
+
+.dark-mode button:hover {
+    background-color: #0056b3;
+}
